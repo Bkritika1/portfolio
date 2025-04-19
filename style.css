@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Nunito", sans-serif;
+}
+.main-section {
+    background: #111111;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.main-section .hero-section {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1600px;
+    pointer-events: none;
+}
+
+.main-section .hero-section .navbar {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1170px;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 30;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.main-section .hero-section .hero-section-text {
+    position: absolute;
+    top: 50%;
+    
+    width: 100%;
+    left: 0;
+    z-index: 20;
+}
+.main-section .hero-section .hero-section-text .hero-content {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+.main-section .hero-section .hero-section-text .hero-content h1 {
+    font-size: 4em;
+    font-family: "Spartan", sans-serif;
+    margin: 0;
+}
+.main-section .hero-section .hero-section-text .hero-content p {
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    margin: 1.25em 0 2.25em;
+}
+.main-section .hero-section .hero-section-text .hero-content .about-me-btn {
+    display: inline-block;
+    background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+    background-color: #4595eb;
+    border-radius: 5px;
+    padding: 0.6em 1.25em;
+    font-weight: 800;
+    position: relative;
+    cursor: pointer;
+    pointer-events: all;
+    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.main-section .hero-section .hero-section-text .name-logo {
+
+    position: absolute;
+    left: 50%; 
+    z-index: -2;
+}
+.main-section .hero-section .hero-section-text .name-logo img {
+    width: 100%;
+}
+
+.main-section .social-links {
+    position: absolute;
+    right: 1em;
+    top: 44%;
+    transform: translateY(-50%);
+    pointer-events: all;
+    z-index: 22;
+}
+li{
+    list-style: none;
+}
