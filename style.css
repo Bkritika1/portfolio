@@ -19,11 +19,8 @@ body{
 }
 
 .main-section .hero-section .navbar {
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 1170px;
     transition: opacity 0.2s ease-in-out;
