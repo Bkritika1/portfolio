@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: "Nunito", sans-serif;
@@ -9,54 +10,123 @@ body{
     background: #111111;
     color: #ffffff;
     height: 100vh;
-}
-
-.main-section .hero-section {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1600px;
-    pointer-events: none;
-}
-
-.main-section .hero-section .navbar {
     display: flex;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1170px;
+    padding: 2rem;
     transition: opacity 0.2s ease-in-out;
     z-index: 30;
     position: absolute;
     width: 90%;
     left: 50%;
-    transform: translateX(-50%);
-    top: 0;
 }
-.main-section .hero-section .hero-section-text {
+.hero-section {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1600px;
+    pointer-events: none;
+}
+.hero-section-text{
     position: absolute;
     top: 50%;
-    
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
     width: 100%;
     left: 0;
     z-index: 20;
-}
-.main-section .hero-section .hero-section-text .hero-content {
+} 
+.hero-content{
     width: 80%;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 2em;
+    
 }
-.main-section .hero-section .hero-section-text .hero-content h1 {
+.hero-content h1{
     font-size: 4em;
     font-family: "Spartan", sans-serif;
     margin: 0;
 }
-.main-section .hero-section .hero-section-text .hero-content p {
+.hero-content p{
     font-family: "Merriweather", serif;
     font-style: italic;
     margin: 1.25em 0 2.25em;
 }
-.main-section .hero-section .hero-section-text .hero-content .about-me-btn {
-    display: inline-block;
+
+
+.name-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    z-index: -2;
+}
+.name-logo img {
+    width: 100%;
+}
+.social-links {
+    position: absolute;
+    font-size: 2em;
+    right: 1em;
+    top: 44%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: all;
+    z-index: 22;
+}
+.social-links li {
+    list-style: none;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    list-style: none;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: transparent;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: transparent;
+    color: white;
+  }
+  
+  .fa-google {
+    background: transparent;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: transparent;
+    color: white;
+  }
+  
+
+  
+  .fa-instagram {
+    background: transparent;
+    color: white;
+  }
+
+  .main-section .hero-section .hero-section-text .hero-content .about-me-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-gradient(linear, right top, left top, from(#1595b6), to(rgba(31, 38, 103, 0.9)));
     background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
     background-color: #4595eb;
     border-radius: 5px;
@@ -65,26 +135,18 @@ body{
     position: relative;
     cursor: pointer;
     pointer-events: all;
+    /* -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    transition: -webkit-transform 0.1s ease-in-out; */
+    /* transition: transform 0.1s ease-in-out; */
     transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
-.main-section .hero-section .hero-section-text .name-logo {
 
+
+.right-arrow {
     position: absolute;
-    left: 50%; 
-    z-index: -2;
-}
-.main-section .hero-section .hero-section-text .name-logo img {
-    width: 100%;
+    top: 10%;
+    right: -20%;
+    -webkit-transition: right 0.2s ease-in-out;
+    transition: right 0.2s ease-in-out;
 }
 
-.main-section .social-links {
-    position: absolute;
-    right: 1em;
-    top: 44%;
-    transform: translateY(-50%);
-    pointer-events: all;
-    z-index: 22;
-}
-li{
-    list-style: none;
-}
