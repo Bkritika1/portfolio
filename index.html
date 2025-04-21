@@ -32,8 +32,7 @@
                     </div>
                 </div>
                 <div class="name-logo">
-                    <!-- <img src="portfolio-main/portfolio-main/part-1-starter-files/assets/images/name-logo.svg" alt="Logo" -->
-                    <!-- class="name-logo-img"> -->
+                    <img src="/icons/WhatsApp_Image_2025-04-21_at_8.48.12_PM-removebg-preview.png" alt="Logo" />
                 </div>
             </div>
             <div class="about-section">
@@ -62,16 +61,27 @@
                             <li>#node.js</li>
                         </ul>
                         <div class="top-skills">
-                            <h2>Web Developer</h2>
+                            <h2 class="web">Web Developer</h2>
                             <div class="skills">
-                                <div><img
-                                        src="portfolio-main/portfolio-main/part-1-starter-files/assets/icons/mongodb.svg">
+                                <div class="skill-icon" data-title="GitHub">
+                                    <img src="/icons/github.svg" alt="GitHub">
                                 </div>
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
+                                <div class="skill-icon" data-title="Node.js">
+                                    <img src="/icons/node.svg" alt="Node.js">
+                                </div>
+                                <div class="skill-icon" data-title="React">
+                                    <img src="/icons/react.svg" alt="React">
+                                </div>
+                                <div class="skill-icon" data-title="Sun">
+                                    <img src="/icons/sun.svg" alt="Sun">
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="iluustration">
+                    <div class="coder-img-container">
+                        <img src="/icons/coder.svg" alt="Coder" class="coder-img">
                     </div>
                 </div>
 
@@ -86,8 +96,8 @@
                 <li><a href="" class="fa fa-instagram"></a></li>
             </ul>
 
-            <!-- <div class="latest-work-links">Latest Work</div>
-            <img src="/icons/at-symbol.svg" alt="Arrow" class="arrow-icon"> -->
+            <div class="latest-work-links">Latest Work</div>
+            <img src="/icons/at-symbol.svg" alt="Arrow" class="arrow-icon">
         </div>
 
     </section>
@@ -95,26 +105,24 @@
         const aboutBtn = document.querySelector('.about-me-btn');
         const aboutSection = document.querySelector('.about-section');
         const closeBtn = document.querySelector('.x-icon');
-    
+
         aboutBtn.addEventListener('click', () => {
             aboutSection.classList.add('active');
             aboutSection.scrollIntoView({ behavior: 'smooth' });
-            aboutSection.style.display = 'block'; // Show the about section
-            aboutSection.style.opacity = '1'; // Fade in effect
+            t
         });
-    
+
         closeBtn.addEventListener('click', () => {
             aboutSection.classList.remove('active');
         });
-    
-        // Optional: Close the popup when clicking outside the about-me box
-        window.addEventListener('click', function(e) {
+
+        window.addEventListener('click', function (e) {
             if (e.target === aboutSection) {
                 aboutSection.classList.remove('active');
             }
         });
     </script>
-    
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>

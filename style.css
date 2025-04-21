@@ -33,7 +33,6 @@ body{
 .hero-section-text{
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-70%);
     transform: translateY(-70%);
     width: 100%;
     left: 0;
@@ -67,13 +66,14 @@ body{
 }
 .name-logo img {
     width: 100%;
+    /* filter: brightness(0) invert(1); */
+
 }
 .social-links {
     position: absolute;
     font-size: 2em;
     right: 1em;
     top: 44%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     pointer-events: all;
     z-index: 22;
@@ -115,18 +115,15 @@ body{
     color: white;
   }
   
-
-  
   .fa-instagram {
     background: transparent;
     color: white;
   }
 
-  .main-section .hero-section .hero-section-text .hero-content .about-me-btn {
+   .about-me-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: -webkit-gradient(linear, right top, left top, from(#1595b6), to(rgba(31, 38, 103, 0.9)));
     background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
     background-color: #4595eb;
     border-radius: 5px;
@@ -135,10 +132,8 @@ body{
     position: relative;
     cursor: pointer;
     pointer-events: all;
-    /* -webkit-transition: -webkit-transform 0.1s ease-in-out;
-    transition: -webkit-transform 0.1s ease-in-out; */
-    /* transition: transform 0.1s ease-in-out; */
-    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition: transform 0.3s ease;
+    gap: 10px; 
 }
 
 
@@ -146,7 +141,6 @@ body{
     position: absolute;
     top: 10%;
     right: -20%;
-    -webkit-transition: right 0.2s ease-in-out;
     transition: right 0.2s ease-in-out;
 }
 
@@ -161,12 +155,7 @@ body{
 .about-section{
     display: none;
 }
-.about-section.active{
-    display: block;
-    
-    background-color: #111111;
-    z-index: 99999;
-}
+
 
 #wrapper-canvas canvas {
     width: 100% !important;
@@ -177,3 +166,167 @@ body{
     z-index: 0;
     pointer-events: auto;
   }
+  .about-section {
+    width: 90%;
+    max-width: 1200px;
+    height: 680px;
+    background: #191919;
+    border-radius: 10px;
+    position: fixed;
+    top: 3%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000;
+}
+.x-icon {
+    background: #27292d;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.x-icon img {
+    vertical-align: middle;
+    width: 50%;
+}
+ .about-me {
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+}
+.about-me .about-me-text {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.about-me-title {
+    color: #1788ae;
+}
+
+ .about-me-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.85em;
+}
+ul {
+    padding: 0;
+}
+ .about-me-text ul li {
+    border: 1px solid #444;
+    padding: 0.4em 0.8em;
+    border-radius: 50px;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+li {
+    list-style: none;
+}
+.web{
+    margin-bottom: 2.2em;
+    margin-top: 2em;
+    color: #1788ae;
+}
+.about-me-text ul {
+    font-size: 0.85em; 
+}
+
+
+.skills{
+    display: flex;
+    margin-top: 1.5em;
+    position: relative;
+}
+.skills img{
+    width: 50px;
+    height: 50px;
+}
+.about-section.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: all;
+    background-color: #111;
+    padding: 2rem;
+}
+
+.about-me {
+    width: 60%;
+}
+
+.iluustration{
+    width: 40%;
+}
+
+.coder-img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.about-me-btn:hover {
+    transform: translateX(5px);
+}
+
+.right-arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.right-arrow img {
+    width: 40px; 
+    transition: transform 0.3s ease;
+}
+
+.about-me-btn:hover .right-arrow img {
+    transform: translateX(2px);
+}
+
+
+
+
+.skill-icon {
+    position: relative;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.skill-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* //////tooltip */
+
+.skill-icon::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    font-size: 0.75em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.skill-icon:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+}
+
