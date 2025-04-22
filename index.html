@@ -97,10 +97,20 @@
             </ul>
 
             <div class="latest-work-links">Latest Work</div>
-            <img src="/icons/at-symbol.svg" alt="Arrow" class="arrow-icon">
+            <img class="down-arrow" src="/images/right-arrow.svg" alt="down arrow">
+            <div class="latest-works-arrow"></div>
         </div>
 
     </section>
+
+    <section id="work-section" class="work-section">
+
+    </section>
+    <section id="contact-section" class="contact-section"></section>
+    <footer id="footer" class="footer">
+
+    </footer>
+
     <script>
         const aboutBtn = document.querySelector('.about-me-btn');
         const aboutSection = document.querySelector('.about-section');
@@ -109,7 +119,6 @@
         aboutBtn.addEventListener('click', () => {
             aboutSection.classList.add('active');
             aboutSection.scrollIntoView({ behavior: 'smooth' });
-            t
         });
 
         closeBtn.addEventListener('click', () => {
@@ -122,8 +131,8 @@
             }
         });
     </script>
-
-
+<script src="data.js"></script>
+<script src="script1.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
