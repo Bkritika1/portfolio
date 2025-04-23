@@ -70,7 +70,7 @@ function renderProjects() {
           <div class="contact-img">
             <img src="https://raw.githubusercontent.com/procodrr/portfolio/03923dca78d059bfdf8a3fabd656deef22aa1d3a/part-2-final-files/assets/images/contact-me.svg">
           </div>
-          <form class="contact" action="https://formsubmit.co/kritikabhardwaj2513@gmail.com" method="POST">
+          <form class="contact" action="https://formsubmit.co/@gmail.com" method="POST">
             <input type="hidden" name="_honey" style="display:none">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="New submission from portfolio!">
