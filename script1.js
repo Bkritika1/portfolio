@@ -54,65 +54,71 @@ function renderProjects() {
   
   const projectContainer = document.getElementById("work-section");
   projectContainer.innerHTML = `
-    <h2>Latest Works</h2>
+   <h2>Latest Works</h2>
+  <div class="projects-wrapper">
+    <!-- All projects will go here -->
     ${renderProjects()}
+  </div>
   `;
 
-  function contactRender(){
+  function contactRender() {
     const container = document.getElementById("contact-section");
     const tpl = `
-    <section class="contact-sec">
-    <h2 class="letcon">Let's connect</h2>
-    <div class="contact-form">
-        <div class="contact-img">
-            <img src="https://raw.githubusercontent.com/procodrr/portfolio/03923dca78d059bfdf8a3fabd656deef22aa1d3a/part-2-final-files/assets/images/contact-me.svg"></img>
-        </div>
-       <form class="contact"  name="contact">
-       <input type="hidden" name="form-name" value="contact"/>
-       <label for="name" class="label1">
-       <img src="icons/user.svg" alt="email icon" />
-            Name</label>
-            <input type="text" name="Name" id="name" required=""/>
+      <section class="contact-sec">
+        <h2 class="letcon">Let's connect</h2>
+        <div class="contact-form">
+          <div class="contact-img">
+            <img src="https://raw.githubusercontent.com/procodrr/portfolio/03923dca78d059bfdf8a3fabd656deef22aa1d3a/part-2-final-files/assets/images/contact-me.svg">
+          </div>
+          <form class="contact" action="https://formsubmit.co/kritikabhardwaj2513@gmail.com" method="POST">
+            <input type="hidden" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New submission from portfolio!">
+            <input type="hidden" name="_template" value="table">
+  
+            <label for="name" class="label1">
+              <img src="icons/user.svg" alt="user icon" /> Name
+            </label>
+            <input type="text" name="Name" id="name" required />
+  
             <label for="email" class="label2">
-            <img src="icons/email.svg" alt="email icon" />
-            Email</label>
-            <input type="email" name="Email" id="email" required=""/>
+              <img src="icons/email.svg" alt="email icon" /> Email
+            </label>
+            <input type="email" name="Email" id="email" required />
+  
             <label for="message" class="label3">
-            <img src="icons/chat.svg" alt="email icon" />
-            Message</label>
-            <textarea name="message" id="message" cols="25" rows="10" required=""></textarea>
+              <img src="icons/chat.svg" alt="chat icon" /> Message
+            </label>
+            <textarea name="message" id="message" cols="25" rows="10" required></textarea>
+  
             <button class="submit-btn" type="submit">
-            <i class="fas fa-paper-plane"></i> &nbsp; Send Message
-          </button>
-
-
-        </form> 
-
-    </div>
-    </section>
-     `;
-     container.innerHTML = tpl;
+              <i class="fas fa-paper-plane"></i> &nbsp; Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    `;
+    container.innerHTML = tpl;
   }
+  
   contactRender();
 
-
-  function footerRender(){
+  function footerRender() {
     const container = document.getElementById("footer");
-   const tpl =`
-   <footer>
-    <p>Kritika Sharma © 2025</p>
-    <div class="footer-logo">
-
-    </div>
-    <ul class="social-links">
-                <li><a href="/" class="fa fa-linkedin"></a></li>
-                <li> <a href="#/" class="fa fa-facebook"></a></li>
-                <li><a href="/" class="fa fa-twitter"></a></li>
-                <li><a href="/" class="fa fa-google"></a></li>
-                <li><a href="" class="fa fa-instagram"></a></li>
-            </ul>
-   </footer>`;
-   container.innerHTML = tpl;
+    const tpl = `
+      <p>Kritika Sharma © 2025</p>
+      <div class="footer-logo"></div>
+      <ul class="social-linkss">
+        <li><a href="/" class="fa fa-linkedin"></a></li>
+        <li><a href="#/" class="fa fa-facebook"></a></li>
+        <li><a href="/" class="fa fa-twitter"></a></li>
+        <li><a href="/" class="fa fa-google"></a></li>
+        <li><a href="/" class="fa fa-instagram"></a></li>
+      </ul>
+    `;
+    container.innerHTML = tpl;
   }
   footerRender();
+  
+  
   
