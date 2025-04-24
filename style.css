@@ -360,7 +360,8 @@ li {
     bottom: 2em;
     cursor: pointer;
     pointer-events: all;
-    left: 51%;
+    left: 50.5%;
+    top: 90%;
     -webkit-transform: translate(-60%, 0) rotate(90deg);
     transform: translate(-60%, 0) rotate(90deg);
     -webkit-transition: bottom 0.25s ease-in-out;
@@ -437,11 +438,18 @@ li {
     position: relative;
     width: 400px;
     max-width: 100%;
+    transition: transform 0.3s ease, scale 0.3s ease;
+    box-shadow: 0  2px 0 rgba(32, 21, 21, 0.2); 
+
+  }
+  .laptop-mockup:hover{
+    transform: scale(1.1);
   }
   
   .laptop-frame {
     width: 100%;
     display: block;
+    transition: transform 0.3s ease, scale 0.3s ease;
   }
   
   .screenshot-inside {
@@ -635,6 +643,27 @@ footer .social-linkss {
     font-size: 2em;
     margin-bottom: 0.2em;
   }
+  /* .laptop-mockup {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    overflow: hidden;
+    
+
+  }
+  
+  .screenshot-inside {
+    transition: transform 0.3s ease, scale 0.3s ease;
+    /* width: 100%; */
+    /* height: auto;
+  }
+  
+   /* You can increase the value for more zoom
+}
+  
+
+
+
 
 /* make responsive  ////// */
 
