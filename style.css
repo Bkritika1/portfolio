@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+html, body {
+    overflow-x: hidden;
+}
 body{
     font-family: "Nunito", sans-serif;
 }
@@ -127,6 +130,7 @@ body{
     justify-content: center;
     background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
     background-color: #4595eb;
+    color: #fff;
     border-radius: 5px;
     padding: 0.6em 1.25em;
     font-weight: 800;
@@ -334,6 +338,7 @@ li {
 
 .main-section .latest-work-links {
     position: absolute;
+    color: #fff;
     background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
     font-weight: 700;
     padding: 0.5em 1em;
@@ -666,6 +671,20 @@ footer .social-linkss {
 
 
 /* make responsive  ////// */
+
+.footer-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 11px; */
+    margin: .5rem;
+
+}
+.footer-logo img{
+    width: 2vw;
+
+}
 
 @media (max-width: 650px) {
     .main-section {

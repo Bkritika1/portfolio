@@ -8,8 +8,8 @@ const data = [
     },
     {
       image: "icons/homestay.png",
-      name: "Homestay Website",
-      heading: "Homestay Booking Website",
+      name: "Homestay ",
+      heading: "Homestay Booking",
       summary: "A clean and modern website for booking homestays, inspired by Airbnb. Built with HTML, CSS, and JavaScript. Includes gallery, room descriptions, and contact forms.",
       languages: ["#HTML", "#CSS", "#JavaScript"]
     },

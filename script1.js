@@ -107,15 +107,15 @@ function renderProjects() {
   function footerRender() {
     const container = document.getElementById("footer");
     const tpl = `
-      <p>Kritika Sharma © 2025</p>
-      <div class="footer-logo"></div>
+     
       <ul class="social-linkss">
         <li><a href="/" class="fa fa-linkedin"></a></li>
         <li><a href="#/" class="fa fa-facebook"></a></li>
         <li><a href="/" class="fa fa-twitter"></a></li>
         <li><a href="/" class="fa fa-google"></a></li>
-        <li><a href="/" class="fa fa-instagram"></a></li>
       </ul>
+       <p>Kritika Sharma © 2025</p>
+      <div class="footer-logo"> <a href="#main-section"><img src="/icons/forward.svg"/></a> </div>
     `;
     container.innerHTML = tpl;
   }
